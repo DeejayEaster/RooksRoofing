@@ -1,17 +1,33 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import roofingVideo from "../../assets/856661-hd_1920_1080_25fps.mp4";
 
 export default function HeroSection() {
   return (
-    <section className="relative h-[600px] bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1632759145351-1d592919f522?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')" }}>
-      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+    <section className="relative h-[600px] overflow-hidden">
+      {/* Video Background */}
+      <div className="absolute inset-0 w-full h-full">
+        <video
+          className="absolute object-cover w-full h-full"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src={roofingVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+      </div>
+      
+      {/* Content */}
       <div className="container mx-auto px-4 h-full flex items-center relative z-10">
         <div className="max-w-3xl animate-fade-in">
           <h1 className="text-white text-4xl md:text-5xl font-bold mb-4 font-montserrat">Quality Roofing Services You Can Trust</h1>
           <p className="text-white text-xl mb-8 font-opensans">Providing top-notch residential and commercial roofing solutions throughout Central Oregon since 1995.</p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
             <Link href="/contact">
-              <Button variant="destructive" className="bg-secondary hover:bg-red-700 text-white font-bold py-3 px-8 rounded-md transition duration-300 text-center">
+              <Button variant="default" className="bg-primary hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-md transition duration-300 text-center">
                 Free Estimate
               </Button>
             </Link>
