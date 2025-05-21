@@ -44,10 +44,10 @@ export default function ProcessSection() {
           {processSteps.map((step) => (
             <div key={step.number} className="text-center">
               <div className="relative w-24 h-24 mx-auto mb-6">
-                <div className="absolute inset-0 bg-primary bg-opacity-10 rounded-full flex items-center justify-center">
-                  <span className="text-primary text-4xl font-bold">{step.number}</span>
+                <div className="absolute inset-0 bg-primary rounded-full flex items-center justify-center">
+                  <span className="text-white text-4xl font-bold">{step.number}</span>
                 </div>
-                <div className="absolute top-0 right-0 bg-primary rounded-full w-8 h-8 flex items-center justify-center">
+                <div className="absolute top-0 right-0 bg-secondary rounded-full w-8 h-8 flex items-center justify-center">
                   <i className={`${step.icon} text-white`}></i>
                 </div>
               </div>
