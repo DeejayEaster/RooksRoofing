@@ -7,6 +7,8 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
+import logo from "../assets/rooks-logo-final.png"; // Adjust the path as necessary
+
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -45,14 +47,14 @@ export default function Header() {
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center py-1">
           <div className="flex items-center">
             <Link href="/">
               <a className="flex items-center">
                 <img 
-                  src="https://rooksroofing.com/wp-content/uploads/2023/08/rooks-roofing-logo.png" 
+                  src={logo} 
                   alt="Rooks Roofing Logo" 
-                  className="h-14"
+                  className="h-24"
                 />
               </a>
             </Link>
@@ -96,7 +98,7 @@ export default function Header() {
           
           <div className="hidden md:block">
             <Link href="/contact">
-              <Button variant="destructive" className="bg-secondary hover:bg-red-700 text-white font-bold py-2 px-6 rounded-md transition duration-300 inline-flex items-center">
+              <Button variant="destructive" className="bg-amber-500 hover:bg-red-700 text-black font-bold py-2 px-6 rounded-md transition duration-300 inline-flex items-center">
                 <i className="fas fa-phone-alt mr-2"></i> Get a Quote
               </Button>
             </Link>
@@ -149,7 +151,7 @@ export default function Header() {
                 
                 <div className="mt-auto pt-6">
                   <Link href="/contact">
-                    <Button variant="destructive" className="w-full bg-secondary hover:bg-red-700 text-white font-bold py-2 px-4 rounded-md">
+                    <Button variant="destructive" className="w-full text-white font-bold py-2 px-4 rounded-md">
                       <i className="fas fa-phone-alt mr-2"></i> Get a Quote
                     </Button>
                   </Link>

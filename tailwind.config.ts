@@ -91,5 +91,6 @@ export default {
       },
     },
   },
+  // @ts-expect-error: TypeScript may not recognize dynamic import in config
   plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 } satisfies Config;
