@@ -25,7 +25,7 @@
   --radius: 0.5rem;
 
   /* Chart colors */
-  --chart-1: 36 100% 50%;
+  --chart-1: 215 99% 51%;
   --chart-2: 0 0% 31.4%;
   --chart-3: 0 0% 57.6%;
   --chart-4: 0 0% 13.7%;
@@ -53,8 +53,8 @@
   --card-foreground: 0 0% 100%;
   --border: 0 0% 31.4%;
   --input: 0 0% 31.4%;
-  --primary: 36 100% 50%;
-  --primary-foreground: 0 0% 13.7%;
+  --primary: 215 99% 51%;
+  --primary-foreground: 0 0% 100%;
   --secondary: 0 0% 57.6%;
   --secondary-foreground: 0 0% 13.7%;
   --accent: 0 0% 31.4%;
@@ -64,7 +64,7 @@
   --ring: 215 99% 51%;
 
   /* Chart colors - darker variants for dark mode */
-  --chart-1: 36 100% 50%;
+  --chart-1: 215 99% 51%;
   --chart-2: 0 0% 57.6%;
   --chart-3: 0 0% 31.4%;
   --chart-4: 0 0% 100%;
