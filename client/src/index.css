@@ -21,7 +21,7 @@
   --accent-foreground: 0 0% 13.7%;
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 0 0% 100%;
-  --ring: 36 100% 50%;
+  --ring: 215 99% 51%;
   --radius: 0.5rem;
 
   /* Chart colors */
@@ -34,12 +34,12 @@
   /* Sidebar colors */
   --sidebar-background: 0 0% 100%;
   --sidebar-foreground: 0 0% 13.7%;
-  --sidebar-primary: 36 100% 50%;
+  --sidebar-primary: 215 99% 51%;
   --sidebar-primary-foreground: 0 0% 100%;
   --sidebar-accent: 0 0% 57.6%;
   --sidebar-accent-foreground: 0 0% 13.7%;
   --sidebar-border: 0 0% 57.6%;
-  --sidebar-ring: 36 100% 50%;
+  --sidebar-ring: 215 99% 51%;
 }
 
 .dark {
@@ -61,7 +61,7 @@
   --accent-foreground: 0 0% 100%;
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 100%;
-  --ring: 36 100% 50%;
+  --ring: 215 99% 51%;
 
   /* Chart colors - darker variants for dark mode */
   --chart-1: 36 100% 50%;
@@ -73,12 +73,12 @@
   /* Sidebar colors */
   --sidebar-background: 0 0% 13.7%;
   --sidebar-foreground: 0 0% 100%;
-  --sidebar-primary: 36 100% 50%;
+  --sidebar-primary: 215 99% 51%;
   --sidebar-primary-foreground: 0 0% 13.7%;
   --sidebar-accent: 0 0% 31.4%;
   --sidebar-accent-foreground: 0 0% 100%;
   --sidebar-border: 0 0% 31.4%;
-  --sidebar-ring: 36 100% 50%;
+  --sidebar-ring: 215 99% 51%;
 }
 
 @layer base {
