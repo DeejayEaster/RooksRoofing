@@ -13,7 +13,7 @@ export default function About() {
       name: "John Rooks",
       position: "Founder & CEO",
       image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&h=256",
-      bio: "John founded Rooks Roofing in 1995 with a vision to provide quality roofing services to Central Oregon. With over 30 years of experience in the industry, he leads our team with expertise and dedication."
+      bio: "John founded Rooks Roofing in 1995 with a vision to provide quality roofing services to North Georgia. With over 30 years of experience in the industry, he leads our team with expertise and dedication."
     },
     {
       id: 2,
@@ -44,10 +44,10 @@ export default function About() {
         <title>About Us | Rooks Roofing</title>
         <meta 
           name="description" 
-          content="Learn about Rooks Roofing - Central Oregon's most trusted roofing company since 1995. Discover our story, our team, and our commitment to quality."
+          content="Learn about Rooks Roofing - North Georgia's Most Trusted Roofing Company since 1995. Discover our story, our team, and our commitment to quality."
         />
         <meta property="og:title" content="About Us | Rooks Roofing" />
-        <meta property="og:description" content="Central Oregon's most trusted roofing company since 1995. Discover our story, our team, and our commitment to quality." />
+        <meta property="og:description" content="North Georgia's Most Trusted Roofing Company since 1995. Discover our story, our team, and our commitment to quality." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://rooksroofing.com/about" />
       </Helmet>
@@ -57,7 +57,7 @@ export default function About() {
         <div className="container mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">About Rooks Roofing</h1>
           <p className="text-white text-xl max-w-3xl mx-auto mb-8 opacity-90">
-            Central Oregon's most trusted roofing company since 1995.
+            North Georgia's Most Trusted Roofing Company since 1995.
           </p>
         </div>
       </section>
@@ -76,13 +76,13 @@ export default function About() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-neutral-800 mb-6">Our Story</h2>
               <p className="text-neutral-600 mb-6">
-                Founded in 1995, Rooks Roofing began with a simple mission: to provide the residents and businesses of Central Oregon with exceptional roofing services at fair prices. John Rooks started the company with just a small crew, focusing on residential repairs and installations.
+                Founded in 1995, Rooks Roofing began with a simple mission: to provide the residents and businesses of North Georgia with exceptional roofing services at fair prices. John Rooks started the company with just a small crew, focusing on residential repairs and installations.
               </p>
               <p className="text-neutral-600 mb-6">
                 Over the years, as our reputation for quality workmanship and outstanding customer service grew, so did our company. Today, we employ a team of experienced professionals who handle everything from small residential repairs to large commercial projects.
               </p>
               <p className="text-neutral-600 mb-8">
-                Despite our growth, we've remained true to our founding principles. We continue to prioritize quality, honesty, and customer satisfaction in everything we do. That's why Rooks Roofing has become Central Oregon's most trusted roofing company.
+                Despite our growth, we've remained true to our founding principles. We continue to prioritize quality, honesty, and customer satisfaction in everything we do. That's why Rooks Roofing has become North Georgia's Most Trusted Roofing Company.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">

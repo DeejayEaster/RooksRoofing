@@ -13,6 +13,7 @@ export interface Project {
   title: string;
   description: string;
   image: string;
+  images?: string[];
   category: string;
   date: string;
 }
@@ -30,10 +31,10 @@ export interface Testimonial {
 export const services: Service[] = [
   {
     id: 1,
-    title: "Residential Roofing",
+    title: "Full Roof Replacement",
     slug: "residential",
     description: "We provide top-quality residential roofing services including installation, replacement, and repair for all types of homes.",
-    image: "https://pixabay.com/get/g180fbc04e742ec9bf2060c218b83026f6de192474cfc2c614adca49f898b010980fd673d1fd4c3f0348e1c95040be6678b2ca8c73b4c3ce610ca5888db14256c_1280.jpg",
+    image: "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg",
     features: [
       "Asphalt Shingle Roofing",
       "Metal Roofing Systems",
@@ -42,10 +43,10 @@ export const services: Service[] = [
   },
   {
     id: 2,
-    title: "Commercial Roofing",
-    slug: "commercial",
-    description: "Our commercial roofing solutions are designed to provide durability, energy efficiency, and cost-effectiveness.",
-    image: "https://pixabay.com/get/g104a6e1244ee74d708629e02cb0a44dea38e76f314a3f8e3f047eac11f43bb0500fe1f1315725746a89e37538845a82dc8ae72e64edead9c5b44bf8510893dfe_1280.jpg",
+    title: "Roofing Repair & Maintenance",
+    slug: "repairs",
+    description: "Our expert team handles all types of roof repairs and maintenance to ensure your roof remains in excellent condition.",
+    image: "https://cdn.midjourney.com/d3d5f148-7c7c-4be6-af59-d70ab5600824/0_3.png",
     features: [
       "Flat Roof Systems",
       "TPO & EPDM Roofing",
@@ -54,10 +55,10 @@ export const services: Service[] = [
   },
   {
     id: 3,
-    title: "Roof Repairs",
-    slug: "repairs",
-    description: "We provide prompt and professional roof repair services to address leaks, damage, and other roofing issues.",
-    image: "https://pixabay.com/get/g74e4a1b9dbc91a8c193716587ec91354c5604d0e78a52bd7c0f8cc7f267b02e39af93491dc91899325202ae8d1737ba7a4f623c175ae922be0abda4dac36bdb3_1280.jpg",
+    title: "Roof Inspections & Assessments",
+    slug: "inspections",
+    description: "We offer comprehensive roof inspections to identify potential issues and provide detailed assessments for repairs or replacements.",
+    image: "https://cdn.midjourney.com/d29755db-6d01-4340-9e9b-6e624f07ca82/0_3.png",
     features: [
       "Leak Detection & Repair",
       "Storm Damage Restoration",
@@ -66,26 +67,26 @@ export const services: Service[] = [
   },
   {
     id: 4,
-    title: "Roof Maintenance",
-    slug: "maintenance",
-    description: "Regular roof maintenance extends the life of your roof and prevents costly repairs. Our maintenance programs keep your roof in top condition.",
-    image: "https://pixabay.com/get/g155c2390736876b20b939474f748161f66ec1b33e5d04510f4e17c7587cb5b2bde64561320cc82d10f5893a20664c13ffdf44371242ac548616609b5a05b068f_1280.jpg",
+    title: "Storm Damage Restoration",
+    slug: "storm-damage",
+    description: "After a storm, our team is ready to assess and restore your roof to its pre-storm condition, ensuring your home is protected.",
+    image: "https://images.pexels.com/photos/12243107/pexels-photo-12243107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     features: [
-      "Routine Inspections",
-      "Gutter Cleaning",
-      "Preventative Maintenance"
+      "Emergency Response",
+      "Insurance Claims Assistance",
+      "Full Restoration Services"
     ]
   },
   {
     id: 5,
-    title: "Roof Inspections",
-    slug: "inspections",
-    description: "Our detailed roof inspections identify problems before they become major issues, saving you time and money.",
-    image: "https://pixabay.com/get/ga9078ad3de893c130bbf49866a2169758604396a9f880d32c0ab162d5b637433db9826e689f86c20b736a079b4913750256b9f189ae8a7f7a4a9fbd61d7410d0_1280.jpg",
+    title: "Roof Insurance Claims Assistance",
+    slug: "insurance-claims",
+    description: "We assist homeowners with roof insurance claims, ensuring you get the coverage you deserve for repairs or replacements.",
+    image: "https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     features: [
-      "Comprehensive Assessments",
-      "Insurance Inspections",
-      "Pre-Purchase Inspections"
+      "Claim Documentation",
+      "Expert Negotiation",
+      "Maximizing Your Claim Value"
     ]
   },
   {
@@ -93,7 +94,7 @@ export const services: Service[] = [
     title: "Gutter Services",
     slug: "gutters",
     description: "Properly functioning gutters protect your home from water damage. We offer installation, repair, and cleaning services.",
-    image: "https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+    image: "https://images.pexels.com/photos/2663254/pexels-photo-2663254.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     features: [
       "Gutter Installation",
       "Gutter Repair & Replacement",
@@ -107,24 +108,36 @@ export const projects: Project[] = [
   {
     id: 1,
     title: "Modern Residential Roof Installation",
-    description: "Complete roof replacement with architectural shingles for a modern home in Bend, Oregon.",
-    image: "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+    description: "“Overall, Rooks Roofing is the best experience I’ve ever had with a contractor. Affordable pricing, high quality workmanship, company integrity, and effective communication – you rarely find these traits in companies anymore!”",
+    image: "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/490412373_685182697810969_4966879597538196898_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5kCwCMMghUEQ7kNvwEysvtE&_nc_oc=AdlDHoljTs4VzqYrQxFrym44WOkgnoko-Ca9j5Cmi4MjswHw8egOfPqTVna5iXNAADHJkdevp_MK5iiu-7dH0H30&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=jXhYFERp7whTNIpcBoMnrw&oh=00_AfNeoY55IiQQ7GHcQHoAoZeuARhWdmSLQD3X7g0S_Awbyw&oe=6847D9FE",
+    images: [
+      "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/494302988_684389601223612_8370039951571989655_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xAXtTtrLzvMQ7kNvwGA-82X&_nc_oc=AdmA2U6Gc1CvgDJ8UEfzd7C6s7L_t1YDoTLsmgAbvPwsgR2XUV3q8NX1JTl7QzhEwQp-hA7zoTFCYrdywwZ2oLtG&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=mvhrVEW1zkuoY68FrlcNhg&oh=00_AfMtOZJI4EqsZnskpqjPsUN7FYkq5vzB_W35pb5GFrtQUQ&oe=6847C28F",
+      "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/494302988_684389601223612_8370039951571989655_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xAXtTtrLzvMQ7kNvwGA-82X&_nc_oc=AdmA2U6Gc1CvgDJ8UEfzd7C6s7L_t1YDoTLsmgAbvPwsgR2XUV3q8NX1JTl7QzhEwQp-hA7zoTFCYrdywwZ2oLtG&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=mvhrVEW1zkuoY68FrlcNhg&oh=00_AfMtOZJI4EqsZnskpqjPsUN7FYkq5vzB_W35pb5GFrtQUQ&oe=6847C28F"
+    ],
     category: "residential",
     date: "April 2023"
   },
   {
     id: 2,
-    title: "Commercial Office Complex",
-    description: "Installation of TPO roofing system for a new office complex in Redmond, Oregon.",
-    image: "https://pixabay.com/get/gb413cc9b81b39294cf9b3de9a74378d304c9860916ce921f3304723dcdbf9d3d891138f3899b0cf44c721ee232744abe1c553201dd30d6eec9b3168bcc73ea96_1280.jpg",
+    title: "Commercial Roof Coating",
+    description: "Take a look at these in-progress photos from our latest commercial roof coating project at the American Legion in Cartersville, GA using trusted MuleHide Silicone Roof Coating products!",
+    image: "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/494302988_684389601223612_8370039951571989655_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xAXtTtrLzvMQ7kNvwGA-82X&_nc_oc=AdmA2U6Gc1CvgDJ8UEfzd7C6s7L_t1YDoTLsmgAbvPwsgR2XUV3q8NX1JTl7QzhEwQp-hA7zoTFCYrdywwZ2oLtG&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=mvhrVEW1zkuoY68FrlcNhg&oh=00_AfMtOZJI4EqsZnskpqjPsUN7FYkq5vzB_W35pb5GFrtQUQ&oe=6847C28F",
+    images: [
+      "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/494302988_684389601223612_8370039951571989655_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xAXtTtrLzvMQ7kNvwGA-82X&_nc_oc=AdmA2U6Gc1CvgDJ8UEfzd7C6s7L_t1YDoTLsmgAbvPwsgR2XUV3q8NX1JTl7QzhEwQp-hA7zoTFCYrdywwZ2oLtG&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=mvhrVEW1zkuoY68FrlcNhg&oh=00_AfMtOZJI4EqsZnskpqjPsUN7FYkq5vzB_W35pb5GFrtQUQ&oe=6847C28F",
+      "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/494302988_684389601223612_8370039951571989655_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xAXtTtrLzvMQ7kNvwGA-82X&_nc_oc=AdmA2U6Gc1CvgDJ8UEfzd7C6s7L_t1YDoTLsmgAbvPwsgR2XUV3q8NX1JTl7QzhEwQp-hA7zoTFCYrdywwZ2oLtG&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=mvhrVEW1zkuoY68FrlcNhg&oh=00_AfMtOZJI4EqsZnskpqjPsUN7FYkq5vzB_W35pb5GFrtQUQ&oe=6847C28F"
+    ],
     category: "commercial",
-    date: "March 2023"
+    date: "May 2025"
   },
   {
     id: 3,
     title: "Mountain Cabin Metal Roof",
     description: "Custom metal roof installation for a mountain cabin in Sisters, Oregon.",
     image: "https://pixabay.com/get/g70fff5571199bae92ab1af3dc3caf9d1e18b4cecfd75b7b6fea27373795173d1811f473d5b65e16f6da2e96ae286856fb254307776494bce45a4a88e0d2240ee_1280.jpg",
+    images: [
+      "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/494302988_684389601223612_8370039951571989655_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xAXtTtrLzvMQ7kNvwGA-82X&_nc_oc=AdmA2U6Gc1CvgDJ8UEfzd7C6s7L_t1YDoTLsmgAbvPwsgR2XUV3q8NX1JTl7QzhEwQp-hA7zoTFCYrdywwZ2oLtG&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=mvhrVEW1zkuoY68FrlcNhg&oh=00_AfMtOZJI4EqsZnskpqjPsUN7FYkq5vzB_W35pb5GFrtQUQ&oe=6847C28F",
+      "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/494302988_684389601223612_8370039951571989655_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xAXtTtrLzvMQ7kNvwGA-82X&_nc_oc=AdmA2U6Gc1CvgDJ8UEfzd7C6s7L_t1YDoTLsmgAbvPwsgR2XUV3q8NX1JTl7QzhEwQp-hA7zoTFCYrdywwZ2oLtG&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=mvhrVEW1zkuoY68FrlcNhg&oh=00_AfMtOZJI4EqsZnskpqjPsUN7FYkq5vzB_W35pb5GFrtQUQ&oe=6847C28F"
+    ],
     category: "residential",
     date: "February 2023"
   },
@@ -133,6 +146,10 @@ export const projects: Project[] = [
     title: "Retail Building Renovation",
     description: "Complete roof renovation for a retail building in Bend, Oregon shopping district.",
     image: "https://pixabay.com/get/g8911cad84716250cb33391ef1ec428f4d2c4b4c2ca043c06ea0d174d7198480233d3a39d176b4f4dc80d62b75c38cab25d1cabe9d8d1604a2d63794e40e4e012_1280.jpg",
+    images: [
+      "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/494302988_684389601223612_8370039951571989655_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xAXtTtrLzvMQ7kNvwGA-82X&_nc_oc=AdmA2U6Gc1CvgDJ8UEfzd7C6s7L_t1YDoTLsmgAbvPwsgR2XUV3q8NX1JTl7QzhEwQp-hA7zoTFCYrdywwZ2oLtG&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=mvhrVEW1zkuoY68FrlcNhg&oh=00_AfMtOZJI4EqsZnskpqjPsUN7FYkq5vzB_W35pb5GFrtQUQ&oe=6847C28F",
+      "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/494302988_684389601223612_8370039951571989655_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xAXtTtrLzvMQ7kNvwGA-82X&_nc_oc=AdmA2U6Gc1CvgDJ8UEfzd7C6s7L_t1YDoTLsmgAbvPwsgR2XUV3q8NX1JTl7QzhEwQp-hA7zoTFCYrdywwZ2oLtG&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=mvhrVEW1zkuoY68FrlcNhg&oh=00_AfMtOZJI4EqsZnskpqjPsUN7FYkq5vzB_W35pb5GFrtQUQ&oe=6847C28F"
+    ],
     category: "commercial",
     date: "January 2023"
   },
@@ -141,6 +158,10 @@ export const projects: Project[] = [
     title: "Historical Home Restoration",
     description: "Careful restoration of a 100-year-old historical home in downtown Bend.",
     image: "https://pixabay.com/get/gfd25e87a836d9174bf33ad6e1583eb0f00d30c1f55e22297f213e092ff7201be565f96877ee8c9ac1c32d0606bd8bb48686a4fc026961fb1871a67129f3fd5c3_1280.jpg",
+    images: [
+      "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/494302988_684389601223612_8370039951571989655_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xAXtTtrLzvMQ7kNvwGA-82X&_nc_oc=AdmA2U6Gc1CvgDJ8UEfzd7C6s7L_t1YDoTLsmgAbvPwsgR2XUV3q8NX1JTl7QzhEwQp-hA7zoTFCYrdywwZ2oLtG&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=mvhrVEW1zkuoY68FrlcNhg&oh=00_AfMtOZJI4EqsZnskpqjPsUN7FYkq5vzB_W35pb5GFrtQUQ&oe=6847C28F",
+      "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/494302988_684389601223612_8370039951571989655_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xAXtTtrLzvMQ7kNvwGA-82X&_nc_oc=AdmA2U6Gc1CvgDJ8UEfzd7C6s7L_t1YDoTLsmgAbvPwsgR2XUV3q8NX1JTl7QzhEwQp-hA7zoTFCYrdywwZ2oLtG&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=mvhrVEW1zkuoY68FrlcNhg&oh=00_AfMtOZJI4EqsZnskpqjPsUN7FYkq5vzB_W35pb5GFrtQUQ&oe=6847C28F"
+    ],
     category: "residential",
     date: "December 2022"
   },
@@ -149,6 +170,10 @@ export const projects: Project[] = [
     title: "Storm Damage Restoration",
     description: "Emergency repairs and restoration after severe windstorm damage in Redmond.",
     image: "https://pixabay.com/get/gc3cfa82a5bec8f518417e393d648cb660498e9d2e9a332cef8f21285cf97ee488d24431c5acb90fef3efdc35cd1ac097a41f5fe3113e3da5595b1ddc70411cec_1280.jpg",
+    images: [
+      "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/494302988_684389601223612_8370039951571989655_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xAXtTtrLzvMQ7kNvwGA-82X&_nc_oc=AdmA2U6Gc1CvgDJ8UEfzd7C6s7L_t1YDoTLsmgAbvPwsgR2XUV3q8NX1JTl7QzhEwQp-hA7zoTFCYrdywwZ2oLtG&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=mvhrVEW1zkuoY68FrlcNhg&oh=00_AfMtOZJI4EqsZnskpqjPsUN7FYkq5vzB_W35pb5GFrtQUQ&oe=6847C28F",
+      "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/494302988_684389601223612_8370039951571989655_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xAXtTtrLzvMQ7kNvwGA-82X&_nc_oc=AdmA2U6Gc1CvgDJ8UEfzd7C6s7L_t1YDoTLsmgAbvPwsgR2XUV3q8NX1JTl7QzhEwQp-hA7zoTFCYrdywwZ2oLtG&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=mvhrVEW1zkuoY68FrlcNhg&oh=00_AfMtOZJI4EqsZnskpqjPsUN7FYkq5vzB_W35pb5GFrtQUQ&oe=6847C28F"
+    ],
     category: "repairs",
     date: "November 2022"
   },
@@ -157,6 +182,10 @@ export const projects: Project[] = [
     title: "Multi-Family Housing Complex",
     description: "New roof installation for an apartment complex with 24 units in Bend, Oregon.",
     image: "https://images.unsplash.com/photo-1590083948608-525d75ee5eee?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+    images: [
+      "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/494302988_684389601223612_8370039951571989655_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xAXtTtrLzvMQ7kNvwGA-82X&_nc_oc=AdmA2U6Gc1CvgDJ8UEfzd7C6s7L_t1YDoTLsmgAbvPwsgR2XUV3q8NX1JTl7QzhEwQp-hA7zoTFCYrdywwZ2oLtG&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=mvhrVEW1zkuoY68FrlcNhg&oh=00_AfMtOZJI4EqsZnskpqjPsUN7FYkq5vzB_W35pb5GFrtQUQ&oe=6847C28F",
+      "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/494302988_684389601223612_8370039951571989655_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xAXtTtrLzvMQ7kNvwGA-82X&_nc_oc=AdmA2U6Gc1CvgDJ8UEfzd7C6s7L_t1YDoTLsmgAbvPwsgR2XUV3q8NX1JTl7QzhEwQp-hA7zoTFCYrdywwZ2oLtG&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=mvhrVEW1zkuoY68FrlcNhg&oh=00_AfMtOZJI4EqsZnskpqjPsUN7FYkq5vzB_W35pb5GFrtQUQ&oe=6847C28F"
+    ],
     category: "residential",
     date: "October 2022"
   },
@@ -165,6 +194,10 @@ export const projects: Project[] = [
     title: "School Building Roof Replacement",
     description: "Complete roof system replacement for a school building during summer break.",
     image: "https://images.unsplash.com/photo-1623296724020-ae55ad77ad6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+    images: [
+      "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/494302988_684389601223612_8370039951571989655_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xAXtTtrLzvMQ7kNvwGA-82X&_nc_oc=AdmA2U6Gc1CvgDJ8UEfzd7C6s7L_t1YDoTLsmgAbvPwsgR2XUV3q8NX1JTl7QzhEwQp-hA7zoTFCYrdywwZ2oLtG&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=mvhrVEW1zkuoY68FrlcNhg&oh=00_AfMtOZJI4EqsZnskpqjPsUN7FYkq5vzB_W35pb5GFrtQUQ&oe=6847C28F",
+      "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/494302988_684389601223612_8370039951571989655_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xAXtTtrLzvMQ7kNvwGA-82X&_nc_oc=AdmA2U6Gc1CvgDJ8UEfzd7C6s7L_t1YDoTLsmgAbvPwsgR2XUV3q8NX1JTl7QzhEwQp-hA7zoTFCYrdywwZ2oLtG&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=mvhrVEW1zkuoY68FrlcNhg&oh=00_AfMtOZJI4EqsZnskpqjPsUN7FYkq5vzB_W35pb5GFrtQUQ&oe=6847C28F"
+    ],
     category: "commercial",
     date: "August 2022"
   },
@@ -173,6 +206,10 @@ export const projects: Project[] = [
     title: "Vacation Home Roof Upgrade",
     description: "Premium metal roof installation for a vacation property in Sunriver, Oregon.",
     image: "https://images.unsplash.com/photo-1531835551805-16d864c8d311?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+    images: [
+      "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/494302988_684389601223612_8370039951571989655_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xAXtTtrLzvMQ7kNvwGA-82X&_nc_oc=AdmA2U6Gc1CvgDJ8UEfzd7C6s7L_t1YDoTLsmgAbvPwsgR2XUV3q8NX1JTl7QzhEwQp-hA7zoTFCYrdywwZ2oLtG&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=mvhrVEW1zkuoY68FrlcNhg&oh=00_AfMtOZJI4EqsZnskpqjPsUN7FYkq5vzB_W35pb5GFrtQUQ&oe=6847C28F",
+      "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/494302988_684389601223612_8370039951571989655_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xAXtTtrLzvMQ7kNvwGA-82X&_nc_oc=AdmA2U6Gc1CvgDJ8UEfzd7C6s7L_t1YDoTLsmgAbvPwsgR2XUV3q8NX1JTl7QzhEwQp-hA7zoTFCYrdywwZ2oLtG&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=mvhrVEW1zkuoY68FrlcNhg&oh=00_AfMtOZJI4EqsZnskpqjPsUN7FYkq5vzB_W35pb5GFrtQUQ&oe=6847C28F"
+    ],
     category: "residential",
     date: "July 2022"
   }

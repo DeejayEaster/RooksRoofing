@@ -292,7 +292,7 @@ export default function Contact() {
               <div>
                 <h4 className="font-bold text-neutral-800 mb-4">Service Area</h4>
                 <p className="text-neutral-600 mb-2">
-                  We proudly serve the following areas in Central Oregon:
+                  We proudly serve the following areas in North Georgia:
                 </p>
                 <ul className="grid grid-cols-2 gap-2 text-neutral-600">
                   <li><i className="fas fa-map-pin text-primary mr-2"></i>Bend</li>

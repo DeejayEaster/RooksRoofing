@@ -98,7 +98,7 @@ export default function Header() {
           
           <div className="hidden md:block">
             <Link href="/contact">
-              <Button variant="destructive" className="bg-amber-500 hover:bg-red-700 text-black font-bold py-2 px-6 rounded-md transition duration-300 inline-flex items-center">
+              <Button variant="destructive" className="border border-amber-400 bg-white text-amber-500 font-bold py-2 px-6 rounded-md transition duration-300 inline-flex items-center hover:bg-amber-400 hover:text-black">
                 <i className="fas fa-phone-alt mr-2"></i> Get a Quote
               </Button>
             </Link>

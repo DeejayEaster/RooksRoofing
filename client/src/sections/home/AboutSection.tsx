@@ -3,13 +3,13 @@ import { Button } from "@/components/ui/button";
 
 export default function AboutSection() {
   return (
-    <section className="py-16 bg-neutral-50">
+    <section className="py-32 bg-neutral-50">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                src="https://img1.wsimg.com/isteam/ip/a9a1642d-cce6-474b-90f5-d93403a610c4/9190EC3D-4F53-4168-9258-780CFD74AB09.jpeg" 
                 alt="Rooks Roofing Team" 
                 className="rounded-lg shadow-lg w-full"
               />
@@ -19,19 +19,18 @@ export default function AboutSection() {
                     <i className="fas fa-award text-3xl"></i>
                   </div>
                   <div>
-                    <p className="text-neutral-800 font-bold text-lg">25+ Years</p>
-                    <p className="text-neutral-600">Of Excellence</p>
+                    <p className="text-neutral-800 font-bold text-lg">5 Stars</p>
+                    <p className="text-neutral-600">on Google Reviews</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-neutral-800 mb-6">Central Oregon's Most Trusted Roofing Company</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-800 mb-6">North Georgia's Most Trusted Roofing Company</h2>
             <p className="text-neutral-600 mb-6">
-              Founded in 1995, Rooks Roofing has been providing quality roofing services to Central Oregon for over 25 years. We take pride in our workmanship and commitment to customer satisfaction.
-            </p>
-            <p className="text-neutral-600 mb-6">
+Rooks Roofing & Exteriors is a family-owned team proudly serving Northwest Georgia. Licensed craftsmen deliver precision installs, while our in-house insurance specialists streamline every claim—turning potential headaches into a seamless, stress-free experience.            </p>
+            <p className="text-neutral-600 mb-12">
               Our team of experienced professionals is dedicated to delivering the highest quality roofing solutions for residential and commercial properties. We use only the finest materials and latest techniques to ensure that your roof is built to last.
             </p>
             

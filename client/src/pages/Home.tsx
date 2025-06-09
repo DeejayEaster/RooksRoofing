@@ -12,13 +12,13 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Rooks Roofing - Quality Roofing Services You Can Trust</title>
+        <title>Rooks Roofing & Exteriors</title>
         <meta 
           name="description" 
-          content="Rooks Roofing provides top-notch residential and commercial roofing solutions throughout Central Oregon since 1995. Licensed, insured, and 5-star rated roofing services."
+          content="Rooks Roofing provides top-notch residential and commercial roofing solutions throughout North Georgia since 1995. Licensed, insured, and 5-star rated roofing services."
         />
-        <meta property="og:title" content="Rooks Roofing - Quality Roofing Services You Can Trust" />
-        <meta property="og:description" content="Providing top-notch residential and commercial roofing solutions throughout Central Oregon since 1995." />
+        <meta property="og:title" content="Rooks Roofing & Exteriors" />
+        <meta property="og:description" content="Providing top-notch residential and commercial roofing solutions throughout North Georgia since 1995." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://rooksroofing.com" />
       </Helmet>

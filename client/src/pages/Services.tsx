@@ -10,7 +10,7 @@ export default function Services() {
         <title>Our Roofing Services | Rooks Roofing</title>
         <meta 
           name="description" 
-          content="Explore our comprehensive roofing services including residential and commercial roofing, repairs, maintenance, inspections, and gutter services throughout Central Oregon."
+          content="Explore our comprehensive roofing services including residential and commercial roofing, repairs, maintenance, inspections, and gutter services throughout North Georgia."
         />
         <meta property="og:title" content="Our Roofing Services | Rooks Roofing" />
         <meta property="og:description" content="Comprehensive roofing services including residential and commercial roofing, repairs, maintenance, inspections, and gutter services." />
@@ -23,7 +23,7 @@ export default function Services() {
         <div className="container mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Our Roofing Services</h1>
           <p className="text-white text-xl max-w-3xl mx-auto mb-8 opacity-90">
-            We provide comprehensive roofing solutions for residential and commercial properties throughout Central Oregon.
+            We provide comprehensive roofing solutions for residential and commercial properties throughout North Georgia.
           </p>
         </div>
       </section>

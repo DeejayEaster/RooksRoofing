@@ -27,10 +27,10 @@ export default function Gallery() {
         <title>Project Gallery | Rooks Roofing</title>
         <meta 
           name="description" 
-          content="Explore our portfolio of residential and commercial roofing projects throughout Central Oregon. View our recent roof installations, repairs, and renovations."
+          content="Explore our portfolio of residential and commercial roofing projects throughout North Georgia. View our recent roof installations, repairs, and renovations."
         />
         <meta property="og:title" content="Project Gallery | Rooks Roofing" />
-        <meta property="og:description" content="Explore our portfolio of residential and commercial roofing projects throughout Central Oregon." />
+        <meta property="og:description" content="Explore our portfolio of residential and commercial roofing projects throughout North Georgia." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://rooksroofing.com/gallery" />
       </Helmet>
@@ -40,7 +40,7 @@ export default function Gallery() {
         <div className="container mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Our Project Gallery</h1>
           <p className="text-white text-xl max-w-3xl mx-auto mb-8 opacity-90">
-            Explore our portfolio of residential and commercial roofing projects throughout Central Oregon.
+            Explore our portfolio of residential and commercial roofing projects throughout North Georgia.
           </p>
         </div>
       </section>

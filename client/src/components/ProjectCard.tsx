@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { Project } from "@/lib/data";
 
 interface ProjectCardProps {
@@ -9,37 +10,96 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   const [isHovered, setIsHovered] = useState(false);
-  
+  const [open, setOpen] = useState(false);
+  const [slide, setSlide] = useState(0);
+
+  const next = () =>
+    setSlide((i) => (i + 1) % project.images.length);
+  const prev = () =>
+    setSlide((i) =>
+      i === 0 ? project.images.length - 1 : i - 1
+    );
+
   return (
-    <Card 
-      className="bg-white rounded-lg overflow-hidden shadow-md group"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      <div className="relative overflow-hidden">
-        <img 
-          src={project.image} 
-          alt={project.title} 
-          className={`w-full h-64 object-cover transition-transform duration-500 ${isHovered ? 'scale-110' : ''}`}
-        />
-        <div className={`absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
-          <Button 
-            variant="secondary" 
-            className="bg-white text-primary hover:bg-primary hover:text-white px-4 py-2 rounded-md font-medium transition"
+    <>
+      {/* CARD */}
+      <Card
+        className="bg-white rounded-lg overflow-hidden shadow-md cursor-pointer group"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        onClick={() => {
+          setSlide(0);
+          setOpen(true);
+        }}
+      >
+        <div className="relative overflow-hidden">
+          <img
+            src={
+              isHovered && project.images[1]
+                ? project.images[1]
+                : project.images[0]
+            }
+            alt={project.title}
+            className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+        </div>
+
+        <CardContent className="p-5">
+          <h3 className="text-lg font-bold text-neutral-800 mb-1">
+            {project.title}
+          </h3>
+          <p className="text-neutral-600 text-sm line-clamp-3 mb-3">
+            {project.description}
+          </p>
+          <div className="flex items-center text-sm text-neutral-500">
+            <span className="bg-neutral-100 px-3 py-1 rounded-full">
+              {project.category}
+            </span>
+            <span className="mx-2">•</span>
+            <span>{project.date}</span>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* MODAL / IMAGE SLIDER */}
+      <Dialog open={open} onOpenChange={setOpen}>
+        <DialogContent className="p-0 max-w-4xl">
+          <button
+            onClick={() => setOpen(false)}
+            className="absolute top-2 right-2 z-10 bg-black/50 p-1 rounded-full text-white"
+            aria-label="Close"
           >
-            View Project
-          </Button>
-        </div>
-      </div>
-      <CardContent className="p-5">
-        <h3 className="text-lg font-bold text-neutral-800 mb-2">{project.title}</h3>
-        <p className="text-neutral-600 text-sm mb-3">{project.description}</p>
-        <div className="flex items-center text-sm text-neutral-500">
-          <span className="bg-neutral-100 px-3 py-1 rounded-full">{project.category}</span>
-          <span className="mx-2">•</span>
-          <span>{project.date}</span>
-        </div>
-      </CardContent>
-    </Card>
+            <X size={18} />
+          </button>
+
+          <div className="relative w-full max-h-[80vh]">
+            <img
+              src={project.images[slide]}
+              alt={`${project.title} – slide ${slide + 1}`}
+              className="w-full max-h-[80vh] object-contain"
+            />
+
+            {project.images.length > 1 && (
+              <>
+                <button
+                  onClick={prev}
+                  className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 p-2 rounded-full text-white"
+                  aria-label="Previous image"
+                >
+                  <ChevronLeft size={24} />
+                </button>
+                <button
+                  onClick={next}
+                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 p-2 rounded-full text-white"
+                  aria-label="Next image"
+                >
+                  <ChevronRight size={24} />
+                </button>
+              </>
+            )}
+          </div>
+        </DialogContent>
+      </Dialog>
+    </>
   );
 }

@@ -184,3 +184,7 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4gaVQ.woff) format('woff');
 }
+
+.hero {
+  height: 90vh;
+}

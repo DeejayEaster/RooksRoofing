@@ -142,7 +142,7 @@ export default function CtaSection() {
                 </Button>
               </Link>
               <Link href="tel:+15415551234">
-                <Button variant="outline" className="border border-white text-white hover:bg-white hover:text-primary font-bold py-3 px-8 rounded-md transition duration-300 text-center">
+                <Button variant="outline" className="border border-white bg-primary text-white hover:bg-white hover:text-primary font-bold py-3 px-8 rounded-md transition duration-300 text-center">
                   <i className="fas fa-phone-alt mr-2"></i> Call Us Now
                 </Button>
               </Link>

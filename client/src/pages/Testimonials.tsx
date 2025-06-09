@@ -10,7 +10,7 @@ export default function Testimonials() {
         <title>Client Testimonials | Rooks Roofing</title>
         <meta 
           name="description" 
-          content="Read what our satisfied customers have to say about Rooks Roofing's services. Discover why we're Central Oregon's most trusted roofing company."
+          content="Read what our satisfied customers have to say about Rooks Roofing's services. Discover why we're North Georgia's Most Trusted Roofing Company."
         />
         <meta property="og:title" content="Client Testimonials | Rooks Roofing" />
         <meta property="og:description" content="Read what our satisfied customers have to say about Rooks Roofing's services." />

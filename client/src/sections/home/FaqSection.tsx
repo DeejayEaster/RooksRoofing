@@ -26,8 +26,8 @@ export default function FaqSection() {
     },
     {
       id: 5,
-      question: "What roofing materials do you recommend for Central Oregon's climate?",
-      answer: "For Central Oregon's climate, which experiences significant temperature variations, heavy snowfall, and occasional high winds, we typically recommend architectural asphalt shingles, metal roofing, or composite materials. These options provide excellent durability, weather resistance, and insulation properties. The best choice depends on your specific needs, budget, and aesthetic preferences. During your consultation, we can discuss the advantages of each material for your particular situation."
+      question: "What roofing materials do you recommend for North Georgia's climate?",
+      answer: "For North Georgia's climate, which experiences significant temperature variations, heavy snowfall, and occasional high winds, we typically recommend architectural asphalt shingles, metal roofing, or composite materials. These options provide excellent durability, weather resistance, and insulation properties. The best choice depends on your specific needs, budget, and aesthetic preferences. During your consultation, we can discuss the advantages of each material for your particular situation."
     }
   ];
 

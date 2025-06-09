@@ -12,7 +12,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
     <div className="flex flex-col min-h-screen">
       <Helmet>
         <title>Rooks Roofing - Professional Roofing Services</title>
-        <meta name="description" content="Providing top-notch residential and commercial roofing solutions throughout Central Oregon since 1995. Quality roofing services you can trust." />
+        <meta name="description" content="Providing top-notch residential and commercial roofing solutions throughout North Georgia since 1995. Quality roofing services you can trust." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
       </Helmet>

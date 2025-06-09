@@ -12,7 +12,7 @@ export default function Footer() {
               className="h-14 mb-4 bg-white p-2 rounded"
             />
             <p className="text-neutral-300 mb-6">
-              Central Oregon's most trusted roofing company since 1995. Providing quality roofing services for residential and commercial properties.
+              North Georgia's most trusted roofing company since 1995. Providing quality roofing services for residential and commercial properties.
             </p>
             <div className="flex space-x-4">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-secondary transition">
